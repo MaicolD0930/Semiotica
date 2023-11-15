@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <section>
+            <article class="col-md-12 FrmArt">
+                <div style="text-align: center">
+                    <h1>Formulario</h1>
+                </div>
+                <br><br>
+                <div>
+                    <p>identificación</p>
+                    <input type="text" class="form-control" id="Dni" placeholder="Ingrese el Dni">
+                </div>
+                <br><br>
+                <div class="input-group mb-3">
+                    <select name="Estudiante" id="SEstudiante" class="form-select">
+                        <option value="DefectoEstudiante">Seleccione un Estudiante</option>
+                        <option value="Estudiante1">Estudiante Numero 1</option>
+                        <option value="Estudiante2">Estudiante Numero 2</option>
+                    </select>
+                    
+                    <select name="Asignatura" id="Asignatura" class="form-select">
+                        <option value="DefectoAsignatura">Seleccione una Asignatura</option>
+                        <option value="Programacion">Programacion</option>
+                        <option value="Fisica">Fisica</option>
+                        <option value="Calculo">Calculo</option>
+                    </select>
+                </div>
+                <div id="img1" style="display: none">
+                    <p>Estudiante Numero 1:</p>
+                    <img src="img/Estudiante 1.jpg">
+                </div>
+                <div id="img2" style="display: none;">
+                    <p>Estudiante Numero 1:</p>
+                    <img src="img/Estudiante 1.jpg">
+                </div>  
+                <br><br>
+                <div class="input-group mb-3">
+                    <input id="N1" class="form-control" type="text" placeholder="Ingrese la Nota N.1">
+                    <input id="N2" class="form-control" type="text" placeholder="Ingrese la Nota N.2">
+                    <input id="N3" class="form-control" type="text" placeholder="Ingrese la Nota N.3">
+                </div>
+                <br><br>
+                <div style="text-align: center">
+                    <button id="BtnInserta" class="btn btn-primary">Insertar</button>
+                </div>
+            </article>
+            <br><br>
+            <div class="container">
+                <table id="Tabla" class="table">
+                    <thead>
+                        <tr>
+                            <th>identificación</th>
+                            <th>Estudiante</th>
+                            <th>Curso</th>
+                            <th>Nota Final</th>
+                            <th>Opciones</th>
+                        </tr>
+                        <tr>    
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <div style="text-align: center;">
+                <p id="NotasF"></p>
+                </div>
+                <div  style="text-align: center;">
+                    <button  class="btn btn-primary" id="Calcular">Calcular promedio</button>
+
+                    <button  class="btn btn-primary" id="buscar">Recorrer y resaltar</button>
+                </div>
+        </div>
+        </section>
+        <br><br><br><br><br>
+    </div>
+
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="Js/JavaScript.js"></script>
+</body>
+</html>
